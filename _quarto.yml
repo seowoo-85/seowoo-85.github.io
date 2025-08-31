@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "seowoo-85.github.io"
@@ -8,6 +9,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - post.qmd
 
 format:
   html:

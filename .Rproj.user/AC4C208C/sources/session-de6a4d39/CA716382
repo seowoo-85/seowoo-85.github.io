@@ -1,9 +1,9 @@
 {
     "id": "CA716382",
-    "path": "C:/tydyverse/seowoo-85.github.io/post.qmd",
-    "project_path": "post.qmd",
+    "path": "C:/tydyverse/seowoo-85.github.io/posts.qmd",
+    "project_path": "posts.qmd",
     "type": "quarto_markdown",
-    "hash": "3143083091",
+    "hash": "4068739741",
     "contents": "",
     "dirty": false,
     "created": 1756607256212.0,
@@ -14,15 +14,15 @@
         "rmdVisualWrapConfigured": "true",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "6,16",
+        "cursorPosition": "9,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1756607610,
+    "lastKnownWriteTime": 1756608840,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1756607610119,
+    "last_content_update": 1756608840,
     "read_only": false,
     "read_only_alternatives": []
 }

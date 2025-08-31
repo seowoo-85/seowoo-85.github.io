@@ -10,5 +10,11 @@
   },
   "post.qmd": {
     "post.html": "a3fde10b"
+  },
+  "posts/2025-08-31-Study/index.qmd": {
+    "index.html": "9f4e2dd4"
+  },
+  "posts.qmd": {
+    "posts.html": "68ff8e5d"
   }
 }

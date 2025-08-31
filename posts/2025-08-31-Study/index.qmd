@@ -9,7 +9,7 @@ author:
 date: last-modified
 categories: [study, website] # self-defined categories
 citation: 
-  url: https://seowoo-85.github.io/post/2025-08-31-study/ 
+  url: https://seowoo-85.github.io/posts/2025-08-31-Study/ 
 #image: thumbnail.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 #bibliography: references.bib

@@ -7,9 +7,6 @@ project:
 website:
   title: "seowoo"   # 텍스트도 함께 보이게 할 거면 유지
   navbar:
-    logo: images/seowoologo.png    # ← 왼쪽 브랜드 로고
-    logo-alt: "Seowoo logo"
-    # logo-href: index.qmd   # (선택) 기본도 홈이지만, 명시하고 싶으면 사용
     left:
       - text: About
         href: about.qmd

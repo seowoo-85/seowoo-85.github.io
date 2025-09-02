@@ -3,35 +3,22 @@ project:
   output-dir: docs
 
 website:
-  title: "Seowoo Park"
-  description: "Spatial Data Science"
+  title: "seowoo-85.github.io"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: about
-        text: About
-      - href: posts
-        text: Blog
-  page-footer:
-    left: "© {#date.year} Seowoo Park"
+      - about.qmd
+      - posts.qmd
 
 format:
   html:
     theme:
       - cosmo
       - brand
-    smooth-scroll: true
     css: styles.css
     toc: true
-
-metadata-files: []
-
-# 블로그 설정 (posts/ 내 리스트 페이지 자동 생성)
-listing:
-  contents: posts
-  type: grid
-  sort: date desc
-  categories: true
+    citation-style: _resources/apa.csl
 
 editor: visual
+

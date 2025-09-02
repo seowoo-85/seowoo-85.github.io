@@ -19,3 +19,27 @@
 @media (max-width: 991.98px) {
   .navbar .navbar-brand .navbar-title { font-size: 1.3rem !important; }
 }
+
+/* ===== Desktop에서만 왼쪽 여백 줘서 바를 안쪽으로 ===== */
+@media (min-width: 992px) {
+  :root {
+    /* ↓ 원하는 만큼 조정: 25vw(=화면의 1/4) 또는 20vw(=1/5) */
+    --nav-left-offset: 25vw;   /* 20vw로 바꾸면 1/5 지점 */
+  }
+
+  /* Quarto/Bootstrap 헤더 컨테이너에 적용 */
+  #quarto-header .navbar .navbar-container,
+  #quarto-header .navbar .container-fluid {
+    padding-left: var(--nav-left-offset);
+    padding-right: 2rem;              /* 오른쪽 여백은 적당히 유지 */
+  }
+}
+
+/* 모바일/태블릿은 기본 정렬로 */
+@media (max-width: 991.98px) {
+  #quarto-header .navbar .navbar-container,
+  #quarto-header .navbar .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

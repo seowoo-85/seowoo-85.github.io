@@ -1,4 +1,5 @@
 /* css styles */
-body {
-  background-color: #ffe6f0; /* 옅은 분홍색 (원하는 색상 코드로 변경 가능) */
-}
+/* Navbar 배경 + 글자색 */
+.navbar { background-color: #ffd9e6 !important; }     /* 옅은 분홍 */
+
+.navbar-brand img { height: 28px; }   /* 24~32px 사이로 취향조절 */

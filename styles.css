@@ -1,3 +1,24 @@
 /* css styles */
 /* Navbar 배경 + 글자색 */
 .navbar { background-color: #ffd9e6 !important; }     /* 옅은 분홍 */
+
+/* 🔄 리셋: 브랜드 텍스트 크기를 기본으로 복원 */
+.navbar .navbar-brand .navbar-title {
+  font-size: var(--bs-navbar-brand-font-size) !important;
+  font-weight: var(--bs-navbar-brand-font-weight, 500) !important;
+}
+
+/* 로고 관련 커스텀을 무력화(로고 안 쓸 거면 영향 없지만 안전하게) */
+.navbar .navbar-brand .navbar-logo {
+  height: auto !important;
+  clip-path: none !important;
+  transform: none !important;
+}
+
+/* 이전에 flex 정렬을 넣었다면 원래대로 */
+.navbar .navbar-brand {
+  display: inline-block !important;
+  gap: 0 !important;
+  padding-top: .3125rem !important;   /* Bootstrap 기본 */
+  padding-bottom: .3125rem !important;
+}

@@ -5,7 +5,7 @@ project:
     - images/
 
 website:
-  title: "Seowoo Park"   # 텍스트도 함께 보이게 할 거면 유지
+  title: "seowoo"   # 텍스트도 함께 보이게 할 거면 유지
   navbar:
     logo: images/seowoologo.png    # ← 왼쪽 브랜드 로고
     logo-alt: "Seowoo logo"

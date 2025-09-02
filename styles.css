@@ -2,4 +2,29 @@
 /* Navbar 배경 + 글자색 */
 .navbar { background-color: #ffd9e6 !important; }     /* 옅은 분홍 */
 
-.navbar-brand img { height: 28px; }   /* 24~32px 사이로 취향조절 */
+/* 로고 크게 보이게 */
+.navbar .navbar-brand .navbar-logo {
+  height: 44px !important;   /* 필요하면 48–56px까지 올려도 OK */
+  width: auto;
+}
+
+/* 제목(Seowoo Park) 글자 크기 줄이기 */
+.navbar .navbar-brand .navbar-title {
+  font-size: 1.05rem;         /* 기본보다 조금 작게 */
+  font-weight: 600;           /* 가독성 유지용 */
+}
+
+/* 큰 로고에 맞춰 수직 정렬/간격 */
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+/* 모바일에서 살짝 더 작게 */
+@media (max-width: 991.98px) {
+  .navbar .navbar-brand .navbar-logo { height: 36px !important; }
+  .navbar .navbar-brand .navbar-title { font-size: 1rem; }
+}

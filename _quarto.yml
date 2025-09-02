@@ -9,9 +9,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
+      - href: about
         text: About
-      - href: posts.qmd
+      - href: posts
         text: Blog
   page-footer:
     left: "© {#date.year} Seowoo Park"

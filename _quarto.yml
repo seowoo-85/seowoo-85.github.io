@@ -3,13 +3,16 @@ project:
   output-dir: docs
 
 website:
-  title: "seowoo-85.github.io"
+  title: "Seowoo Park"   # 텍스트도 함께 보이게 할 거면 유지
   navbar:
+    logo: seowoologo.png    # ← 왼쪽 브랜드 로고
+    # logo-href: index.qmd   # (선택) 기본도 홈이지만, 명시하고 싶으면 사용
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-      - posts.qmd
+      - text: About
+        href: about.qmd
+      - text: Blog
+        href: posts.qmd
+      # Home 항목은 제거!
 
 format:
   html:

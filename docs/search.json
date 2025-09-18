@@ -18,7 +18,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Name: 박서우우\nEnglish Name: Seo-woo Park\nBirthday: 2003-08-05 (Age: 22)\nEmail: seowoo0805@snu.ac.kr\nLocation: Seoul, South Korea\nBlood Type: O ()"
   },
   {
     "objectID": "posts/2025-08-31-Study/index.html",
@@ -33,5 +33,26 @@
     "title": "seowoo",
     "section": "Latest Posts",
     "text": "Latest Posts"
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About Me!",
+    "section": "Interests",
+    "text": "Interests\nI’m interested in urban data, maps, and human-centered design. I enjoy exploring public datasets, building small web tools, and writing posts that make complex topics accessible. Recently I’ve been learning Quarto/Markdown for publishing, improving my R skills for data wrangling and visualization, and experimenting with lightweight front-end components."
+  },
+  {
+    "objectID": "about.html#interests-1",
+    "href": "about.html#interests-1",
+    "title": "About",
+    "section": "Interests",
+    "text": "Interests\nI’m interested in urban data, maps, and human-centered design. I enjoy exploring public datasets, building small web tools, and writing posts that make complex topics accessible. Recently I’ve been learning Quarto/Markdown for publishing, improving my R skills for data wrangling and visualization, and experimenting with lightweight front-end components to make content feel more alive."
+  },
+  {
+    "objectID": "about.html#hi",
+    "href": "about.html#hi",
+    "title": "About Me!",
+    "section": "Hi",
+    "text": "Hi\nHello! I’m Seowoo Park, a master’s student in the GIS Lab at Seoul National University. I’m very interested in spatial data science and am studying how to make better use of data. This semester, I’ve started to dive into machine learning and deep learning. It’s… not easy, to be honest. Still, I’m taking it one day at a time, hoping to become a better scholar tomorrow—and the day after—than I am today.\nI plan to use this website to give a brief introduction to who I am and to share what I’m learning and bits of everyday life. Welcome!"
   }
 ]

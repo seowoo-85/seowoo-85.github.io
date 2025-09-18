@@ -1,9 +1,42 @@
 ---
-title: "About"
+title: "About Me!"
+toc: false
+---        
+
+<!-- About 전용 스타일 (이 페이지에서만 적용) -->
+<style>
+  .about-info { list-style: none; padding: 0; margin: 0; font-size: 1.1rem; line-height: 1.7; }
+  .about-info li { display: flex; align-items: center; gap: .6rem; margin: .25rem 0; }
+  .about-info .ico {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; border-radius: 8px;
+    background: rgba(85,107,47,.10); color: #556B2F; /* 녹갈 포인트 */
+    font-size: 16px;
+  }
+  .about-info .label { font-weight: 700; min-width: 120px; color: #6B4226; } /* 갈색 라벨 */
+  .about-info .value a { text-decoration: none; }
+  @media (max-width: 575.98px) { .about-info { font-size: 1.02rem; } }
+</style>
+
+<!-- 사진: 왼쪽에 띄우고 오른쪽/아래 여백 -->
+<img src="images/aboutme.jpg" alt="Seowoo ID Photo"
+     style="float:left; width:260px; margin:0 1.25rem 1rem 0; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,.08);" />
+
+<!-- 기본 정보: 아이콘 + 라벨 + 값 -->
+<ul class="about-info">
+  <li><span class="ico">👤</span><span class="label">Name</span><span class="value">박서우&nbsp; Seo-woo Park</span></li><br>
+  <li><span class="ico">🎂</span><span class="label">Birthday</span><span class="value">2003-08-05 (Age: 22)</span></li><br>
+  <li><span class="ico">📧</span><span class="label">Email</span><span class="value"><a href="mailto:youremail@example.com">seowoo0805@snu.ac.kr</a></span></li><br>
+  <li><span class="ico">📍</span><span class="label">Location</span><span class="value">Seoul, South Korea</span></li><br>
+  <li><span class="ico">🩸</span><span class="label">Blood Type</span><span class="value">🅾️ &nbsp; 👈🦟mosquito magnet!</span></li>
+</ul>
+
+<div style="clear:both;"></div>
+
 ---
 
-About this site
+## Hi
 
-```{r}
-1 + 1
-```
+Hello! I’m Seowoo Park, a master’s student in the GIS Lab at Seoul National University. I’m very interested in spatial data science and am studying how to make better use of data. This semester, I’ve started to dive into machine learning and deep learning. It’s… not easy, to be honest. Still, I’m taking it one day at a time, hoping to become a better scholar tomorrow—and the day after—than I am today.
+
+I plan to use this website to give a brief introduction to who I am and to share what I’m learning and bits of everyday life. Welcome!

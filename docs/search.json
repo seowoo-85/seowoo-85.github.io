@@ -9,9 +9,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "SEOWOO",
+    "title": "seowoo",
     "section": "",
-    "text": "&lt;img src=\"images/image1.jpg\"&gt;\n\n\nseowoo\n\n\nlist.files(“docs/images”)"
+    "text": "Welcome"
   },
   {
     "objectID": "about.html",
@@ -26,5 +26,12 @@
     "title": "first post",
     "section": "",
     "text": "오늘 날씨 여전히 더움\n\n\n\nCitationBibTeX citation:@online{park2025,\n  author = {Park, Seowoo},\n  title = {First Post},\n  date = {2025-09-18},\n  url = {https://seowoo-85.github.io/posts/2025-08-31-Study/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPark, Seowoo. 2025. “First Post.” September 18, 2025. https://seowoo-85.github.io/posts/2025-08-31-Study/."
+  },
+  {
+    "objectID": "index.html#latest-posts",
+    "href": "index.html#latest-posts",
+    "title": "seowoo",
+    "section": "Latest Posts",
+    "text": "Latest Posts"
   }
 ]

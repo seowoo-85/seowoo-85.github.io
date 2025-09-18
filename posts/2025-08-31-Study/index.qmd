@@ -6,7 +6,7 @@ author:
     url: https://seowoo-85.github.io/
     affiliation: GIS Lab, Department of Geography Education at Seoul National University
     affiliation-url: https://geoedu.snu.ac.kr/ 
-date: last-modified
+date: 2025-08-31
 categories: [study, website] # self-defined categories
 citation: 
   url: https://seowoo-85.github.io/posts/2025-08-31-Study/ 

@@ -5,7 +5,8 @@ project:
     - images/
 
 website:
-  title: "seowoo"   # 텍스트도 함께 보이게 할 거면 유지
+  title: "seowoo"   # 텍스트도 함께 보이게 할 거면 유지'
+  favicon: images/clover.png      # ← 탭 아이콘(파비콘)
   navbar:
     left:
       - text: About

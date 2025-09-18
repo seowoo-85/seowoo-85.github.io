@@ -1,38 +1,41 @@
-/* css styles */
-/* Navbar 배경 + 글자색 */
-.navbar { background-color: #ffd9e6 !important; }     /* 옅은 분홍 */
+/* 네비게이션바 배경 투명 + 글자색 갈색 */
+.navbar { background-color: transparent !important; box-shadow: none !important; }
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand { color: #6B4226 !important; }
+.navbar .navbar-brand { font-size: 1.6rem !important; font-weight: 700; line-height: 1.1; }
 
-/* 브랜드 텍스트 크게 */
-.navbar .navbar-brand .navbar-title {
-  font-size: 1.6rem !important;  /* 1.4~1.8rem 사이로 취향 조절 */
-  font-weight: 700;               /* 굵기도 살짝 업(선택) */
-  line-height: 1.1;
+/* 링크 패딩 살짝 줄이기 (선택) */
+.navbar .nav-link { padding-top: .35rem; padding-bottom: .35rem; }
+
+/* 배너 컨테이너 */
+.banner {
+  position: relative;
+  max-width: 100%;
+  height: 500px;         /* 높이 조정 가능 */
+  overflow: hidden;
 }
 
-/* (선택) 큰 타이틀과 정렬 맞추기 위해 링크 패딩 살짝 줄이기 */
-.navbar .nav-link {
-  padding-top: .35rem;
-  padding-bottom: .35rem;
+/* 한 장짜리 배너(슬라이드 컨테이너) */
+.banner .slides {
+  width: 100%;
+  height: 100%;
 }
 
-/* 모바일에선 너무 커지지 않게 조금 낮춤 */
-@media (max-width: 991.98px) {
-  .navbar .navbar-brand .navbar-title { font-size: 1.3rem !important; }
+/* 이미지 꽉 채우기 */
+.banner .slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* 자르더라도 꽉 채워 보여주기 */
 }
 
-/* ===== Desktop에서만 왼쪽 여백 줘서 바를 안쪽으로 ===== */
-@media (min-width: 992px) {
-  :root {
-    /* ↓ 원하는 만큼 조정: 25vw(=화면의 1/4) 또는 20vw(=1/5) */
-    --nav-left-offset: 10vw;   /* 20vw로 바꾸면 1/5 지점 */
-  }
-
-
-/* 모바일/태블릿은 기본 정렬로 */
-@media (max-width: 991.98px) {
-  #quarto-header .navbar .navbar-container,
-  #quarto-header .navbar .container-fluid {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+/* 가운데 흰 글씨 */
+.banner .centered-text {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  z-index: 10;
 }

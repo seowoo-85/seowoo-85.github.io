@@ -4,14 +4,14 @@
     "href": "posts.html",
     "title": "Blog",
     "section": "",
-    "text": "first post\n\n\n\nstudy\n\n\nwebsite\n\n\n\nmy first post\n\n\n\nSeowoo Park\n\n\nAug 31, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "first post\n\n\n\nstudy\n\nwebsite\n\n\n\nmy first post\n\n\n\nSeowoo Park\n\n\nSep 18, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "seowoo-85.github.io",
+    "title": "SEOWOO",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "&lt;img src=\"images/image1.jpg\"&gt;\n\n\nseowoo\n\n\nlist.files(“docs/images”)"
   },
   {
     "objectID": "about.html",
@@ -25,6 +25,6 @@
     "href": "posts/2025-08-31-Study/index.html",
     "title": "first post",
     "section": "",
-    "text": "오늘 날씨 여전히 더움\n\n\n\nCitationBibTeX citation:@online{park2025,\n  author = {Park, Seowoo},\n  title = {First Post},\n  date = {2025-08-31},\n  url = {https://seowoo-85.github.io/posts/2025-08-31-Study/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPark, Seowoo. 2025. “First Post.” August 31, 2025. https://seowoo-85.github.io/posts/2025-08-31-Study/."
+    "text": "오늘 날씨 여전히 더움\n\n\n\nCitationBibTeX citation:@online{park2025,\n  author = {Park, Seowoo},\n  title = {First Post},\n  date = {2025-09-18},\n  url = {https://seowoo-85.github.io/posts/2025-08-31-Study/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPark, Seowoo. 2025. “First Post.” September 18, 2025. https://seowoo-85.github.io/posts/2025-08-31-Study/."
   }
 ]

@@ -1,11 +1,17 @@
 ---
-title: "seowoo-85.github.io"
+title: "SEOWOO"
+format:
+  html:
+    css: styles.css
 ---
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<div class="banner">
+  <div class="slides">
+    <img src="images/image1.jpg">
+  </div>
+  <div class="centered-text">seowoo</div>
+</div>
 
-```{r}
-1 + 1
-```
+list.files("docs/images")
+

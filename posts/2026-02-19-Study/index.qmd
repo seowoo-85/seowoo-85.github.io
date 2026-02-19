@@ -1,0 +1,107 @@
+---
+title: "MLDL: U-Net"
+description: "ML/DL study: what is U-Net & CNN"
+author:
+  - name: Seowoo Park
+    url: https://seowoo-85.github.io/
+    affiliation: "GIS Lab, Department of Geography Education, Seoul National University"
+    affiliation-url: https://geoedu.snu.ac.kr/
+date: 2026-02-19
+categories: [study, mldl]
+citation:
+  url: https://seowoo-85.github.io/posts/2026-02-19-Study/
+draft: false
+---
+
+# U-net은 대표적인 semantic segmentation
+
+</br> classification보다 segmentation이 더 어러움! Classification은 “이 이미지가 고양이냐?”를 판정하는 것</br> 그러나, segmentation은 “각 픽셀이 고양이냐?”를 맞춰야함.
+
+CNN 두 가지 가정
+
+-   Locality: 가까운 곳에 더 연관됨.
+
+-   Translation invariance: 같은 패턴이 반복됨. </br> </br> </br>
+
+### 1. 합성곱 연산이 실제로 뭐 하는 것인가? - Stride/padding/output
+
+</br> Stride: 커널을 몇 칸씩 이동할 것인지
+
+Padding: 가장자라 정보를 유지하기 위해 가장자리에 0을 채움
+
+채널이 늘어난다는 것? 합성곱을 여러 개 쓰면 출력 채널이 여러 개가 됨.
+
+각 채널은 서로다른 특징을 갖음. 초-중-후반으로 가면서 더 고수준 특징을 추출 즉, CNN은 픽셀을 직접 보지 않고 추상화된 표현(representation)을 만들어냄.</br>
+
+이때, 비선형(reLU)가 필요. 합성곱은 선형 연산이므로, 여러 층을 쌓아도 결국 하나의 선형 변환과 동일해짐. 선형 변환만으로는 복잡한 비선형 패턴(예: 객체 경계, 곡선 구조)을 표현할 수 없음. 따라서 ReLU와 같은 비선형 함수를 추가하여 모델이 복잡한 decision boundary를 학습할 수 있게 함.
+
+-   따라서 reLU와 같은 비선형을 넣어서 표현력을 상승시킴. </br> </br> </br>
+
+### 2. 풀링/다운샘플링을 하는 이유(encoder)
+
+</br> pooling은 feature map의 해상도를 줄여, 이후 convolution이 더 넓은 영역을 한 번에 볼 수 있게 만든다.
+그 결과 receptive field가 효과적으로 증가하여 더 넓은 문맥 정보를 학습할 수 있다.
+
+한 픽셀이 더 많은 픽셀을 대표함.
+
+더 넓은 문맥(context를 볼 수 있음) 연산량이 감소됨.
+
+작은 위치 변화에 덜 민감함.
+
+BUT! **공간정보가 손실됨**
+
+따라서 U-Net은 스킵 연결로 보완함. </br> </br> </br>
+
+### 3. U-Net의 구조: encoder, decoder, skip connection.
+
+</br> Encoder: 문맥을 잘 이해하도록 축소하여 특징 추출
+
+Decoder: 다시 원래 해상도로 복원하여 픽셀 분류
+
+Skip connection: 고해상도 디테일을 decoder로 직접 전달. encoder의 고해상도 feature map을 decoder로 직접 전달하여, 위치 정보와 semantic 정보를 결합한다.
+
+Encoder: “무엇인지”를 파악 위치정밀도는 감소하지만 대신, 이게 하천인지, 배경인지 같은 고수준 의미가 강화됨
+
+Bottleneck(가운데): 가장 큰 receptive field, 전역 문맥을 많이 반영
+
+Decoder: “어디인지”를 복원, 일반적인 블록 업샘플만 하면 “뭉개진”경계가 나오기 쉬움.
+
+Skip connection의 핵심: Concatenate concat함녀 채널 방향으로 붙어서, 어디 + 무엇을 같이 가지고 후속 conv가 최종 마스크를 정교화함. </br> </br>
+
+### 4. Transposed Conv vs UpSample+Conv
+
+</br> 우선! Upsampling?
+
+해상도를 다시 키워서 픽셀 단위 segmentation mask를 만들기 위해
+
+방법1: transposed convolution: convolution의 반대 각 픽셀을 kernel로 확장
+
+![Transposed convolution example](image1.png){fig-align="center" width="40%"}
+
+모델이 최적의 업샘플 방법을 스스로 학습함. 문제: checkerboard artifact Kernel이 overlap되는 영역과 안되는 영역이 있음
+
+![Checkerboard artifact example](image2.png){fig-align="center" width="40%"}
+
+Upsample + conv는 문제 없음. 모든 픽셀이 동일한 방식으로 생성 이후 conv 적용 </br> </br> </br>
+
+출력층: 픽셀별 확률
+
+-   이진 분할(하천 vs 배경)
+
+![binary classification](image3.png){fig-align="center" width="40%"}
+
+-   다중 클래스(K개)
+
+![Multi class](image4.png){fig-align="center" width="40%"} </br> </br> </br>
+
+### 5. 손실함수(Loss)
+
+</br> 클래스 불균형이 심할 때, 하천 픽셀은 보통 전체 하천 픽셀 중 아주 적음.
+
+그러면 BCE만 쓰면 모델이 전부 배경이라고 해도 손실이 크게 늘지 않을 수 있음.
+
+BCE/CE (기본) Dice loss(segmentation에 매우 흔함.)
+
+![Loss function: Dice](image5.png){fig-align="center" width="40%"}
+
+손실은 1-Dice

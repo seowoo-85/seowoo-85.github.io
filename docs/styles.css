@@ -1,0 +1,87 @@
+/* 네비게이션바 배경 투명 + 글자색 갈색 */
+.navbar { background-color: transparent !important; box-shadow: none !important; }
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand { color: #6B4226 !important; }
+.navbar .navbar-brand { font-size: 1.6rem !important; font-weight: 700; line-height: 1.1; }
+
+/* 링크 패딩 살짝 줄이기 (선택) */
+.navbar .nav-link { padding-top: .35rem; padding-bottom: .35rem; }
+
+/* 배너 컨테이너 */
+.banner {
+  position: relative;
+  max-width: 100%;
+  height: 500px;         /* 높이 조정 가능 */
+  overflow: hidden;
+}
+
+/* 한 장짜리 배너(슬라이드 컨테이너) */
+.banner .slides {
+  width: 100%;
+  height: 100%;
+}
+
+/* 이미지 꽉 채우기 */
+.banner .slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* 자르더라도 꽉 채워 보여주기 */
+}
+
+/* 가운데 흰 글씨 */
+.banner .centered-text {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  #quarto-header .navbar .container-fluid {
+    padding-left: 16vw;   /* ← 수치로 “얼만큼” 오른쪽으로 당길지 결정 (6~12vw 사이로 조절) */
+    padding-right: 4vw;
+  }
+}
+
+/* 네비게이션 링크 hover/focus 시 녹색 */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #2e7d32 !important;   /* 녹색 */
+}
+
+.navbar .navbar-nav .nav-link {
+  transition: color .15s ease;  /* 부드럽게 변화 */
+}
+
+/* About page tweaks */
+.about-list { 
+  display: grid; 
+  grid-template-columns: 160px 1fr; 
+  row-gap: .4rem; 
+  column-gap: 1rem;
+  margin: 0 0 1rem 0;
+}
+.about-list dt { 
+  font-weight: 700; 
+  color: #6B4226;        /* your brown tone */
+}
+.about-list dd { margin: 0; }
+
+.about-photo { 
+  max-width: 360px;      /* control headshot size on desktop */
+  object-fit: cover; 
+}
+
+/* Mobile: stack labels over values */
+@media (max-width: 575.98px) {
+  .about-list { grid-template-columns: 1fr; }
+}
+
+/* tighten about page details */
+h1 + p, h1 + dl { margin-top: .5rem; }

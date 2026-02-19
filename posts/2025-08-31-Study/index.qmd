@@ -1,0 +1,18 @@
+---
+title: "first post"
+description: "my first post"
+author:
+  - name: Seowoo Park
+    url: https://seowoo-85.github.io/
+    affiliation: GIS Lab, Department of Geography Education at Seoul National University
+    affiliation-url: https://geoedu.snu.ac.kr/ 
+date: 2025-08-31
+categories: [study, website] # self-defined categories
+citation: 
+  url: https://seowoo-85.github.io/posts/2025-08-31-Study/ 
+#image: thumbnail.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+#bibliography: references.bib
+---
+
+오늘 날씨 여전히 더움

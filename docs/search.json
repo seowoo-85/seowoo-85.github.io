@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "first post\n\n\n\nstudy\n\nwebsite\n\n\n\nmy first post\n\n\n\nSeowoo Park\n\n\nSep 18, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "seowoo",
+    "section": "",
+    "text": "Welcome"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Name: 박서우우\nEnglish Name: Seo-woo Park\nBirthday: 2003-08-05 (Age: 22)\nEmail: seowoo0805@snu.ac.kr\nLocation: Seoul, South Korea\nBlood Type: O ()"
+  },
+  {
+    "objectID": "posts/2025-08-31-Study/index.html",
+    "href": "posts/2025-08-31-Study/index.html",
+    "title": "first post",
+    "section": "",
+    "text": "오늘 날씨 여전히 더움\n\n\n\nCitationBibTeX citation:@online{park2025,\n  author = {Park, Seowoo},\n  title = {First Post},\n  date = {2025-09-18},\n  url = {https://seowoo-85.github.io/posts/2025-08-31-Study/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPark, Seowoo. 2025. “First Post.” September 18, 2025. https://seowoo-85.github.io/posts/2025-08-31-Study/."
+  },
+  {
+    "objectID": "index.html#latest-posts",
+    "href": "index.html#latest-posts",
+    "title": "seowoo",
+    "section": "Latest Posts",
+    "text": "Latest Posts"
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "About Me!",
+    "section": "Interests",
+    "text": "Interests\nI’m interested in urban data, maps, and human-centered design. I enjoy exploring public datasets, building small web tools, and writing posts that make complex topics accessible. Recently I’ve been learning Quarto/Markdown for publishing, improving my R skills for data wrangling and visualization, and experimenting with lightweight front-end components."
+  },
+  {
+    "objectID": "about.html#interests-1",
+    "href": "about.html#interests-1",
+    "title": "About",
+    "section": "Interests",
+    "text": "Interests\nI’m interested in urban data, maps, and human-centered design. I enjoy exploring public datasets, building small web tools, and writing posts that make complex topics accessible. Recently I’ve been learning Quarto/Markdown for publishing, improving my R skills for data wrangling and visualization, and experimenting with lightweight front-end components to make content feel more alive."
+  },
+  {
+    "objectID": "about.html#hi",
+    "href": "about.html#hi",
+    "title": "About Me!",
+    "section": "Hi",
+    "text": "Hi\nHello! I’m Seowoo Park, a master’s student in the GIS Lab at Seoul National University. I’m very interested in spatial data science and am studying how to make better use of data. This semester, I’ve started to dive into machine learning and deep learning. It’s… not easy, to be honest. Still, I’m taking it one day at a time, hoping to become a better scholar tomorrow—and the day after—than I am today.\nI plan to use this website to give a brief introduction to who I am and to share what I’m learning and bits of everyday life. Welcome!"
+  }
+]

@@ -3,7 +3,7 @@ title: ""           # 타이틀 비우기
 title-block: false  # 타이틀 블록 자체 숨기기
 toc: false  
 listing:
-  contents: posts/**          # 폴더형 포스트 전부 포함
+  contents: "posts/**/index.qmd"          # 폴더형 포스트 전부 포함
   sort: "date desc"           # 최신순
   type: grid                  # 카드형
   grid-columns: 4             # 한 줄 4개

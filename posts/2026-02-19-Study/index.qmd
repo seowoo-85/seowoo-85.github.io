@@ -6,7 +6,7 @@ author:
     url: https://seowoo-85.github.io/
     affiliation: "GIS Lab, Department of Geography Education, Seoul National University"
     affiliation-url: https://geoedu.snu.ac.kr/
-date: 2026-02-19
+date: 2025-02-19
 categories: [study, mldl]
 citation:
   url: https://seowoo-85.github.io/posts/2026-02-19-Study/
